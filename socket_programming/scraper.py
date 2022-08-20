@@ -1,5 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
+'''NB the code below is just for practice purposes since the 
+data extracted may not be in line according to the terms and conditions
+of the website whose url is used'''
 data = requests.get('https://news.ycombinator.com/news')
 response = data.text
 soup = BeautifulSoup(response, 'html.parser')
